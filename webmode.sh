@@ -5,7 +5,7 @@ if [ "$1" == "" ]; then
 	exit 1
 fi
 
-# Make sure only root can run our script
+# Make sure only root can run this script
 if [ "$(id -u)" != "0" ]; then
    echo "This script must be run as root" 1>&2
    exit 1
